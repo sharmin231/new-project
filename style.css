@@ -1,0 +1,11 @@
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.players{
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
+    background-color: bisque;
+}
