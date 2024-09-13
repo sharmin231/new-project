@@ -3,6 +3,8 @@ const player2 = document.querySelector(".player-2")
 const winner = document.querySelector(".winner")
 const btn1 = document.querySelector(".btn-1")
 const btn2 = document.querySelector(".btn-2")
+const p1 = document.querySelector(".p1");
+const p2 =document.querySelector(".p2");
 
 let playerOneClick = 0;
 let playerTwoClick = 0;
@@ -20,8 +22,8 @@ function compareScore() {
         winner.textContent="player-1 is the winner"
     } else if (player2Total > player1Total) {
         winner.textContent="player-2 is the winner"
-    } else {
-        "it's a tie !!"
+    } else{
+        winner.textContent="player-2 is the winner"
     }
 }
 
@@ -30,6 +32,7 @@ btn1.addEventListener("click", (e) => {
     playerOneClick++
     if (playerOneClick <= maxClick) {
         const num = random();
+        p1.textContent = num;
         player1Total += num;
         player1.textContent = player1Total;
         // playerOneClick++
@@ -46,6 +49,7 @@ btn2.addEventListener("click", (e) => {
     playerTwoClick++
     if (playerTwoClick <= maxClick) {
         const num = random();
+        p2.textContent = num;
         player2Total += num;
         player2.textContent = player2Total;
         // playerTwoClick++

@@ -29,5 +29,13 @@ gap: 20px;
     border-radius: 10px;
 }
 .winner{
-    margin: 10px 20px;
+    margin: 0 auto;
+    background-color: white;
+    width: 200px;
+    padding: 8px;
+    border-radius: 25px;
+
+}
+.btn{
+    margin-top: 40px;
 }
