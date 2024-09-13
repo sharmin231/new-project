@@ -8,4 +8,26 @@
     width: 600px;
     height: 400px;
     background-color: bisque;
+
+}
+#players{
+    display: flex;
+    justify-content: center;
+padding: 20px;
+gap: 20px;
+}
+.player-1-div{
+    width: 150px;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+}
+.player-2-div{
+    width: 150px;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+}
+.winner{
+    margin: 10px 20px;
 }
